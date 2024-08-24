@@ -8,46 +8,49 @@
 const USER_CONFIG = {
 
   // 使用微信测试号：公众号APP_ID
-  APP_ID: 'wxde3fc3dd6d16688c',
-
-  // 使用微信测试号：公众号APP_SECRET
-  APP_SECRET: '849a0458f4f7cfa3aac0bf1188583808',
-
-  PROVINCE: '广西',
-  CITY: '南宁',
-
-  USERS: [
-    {
-      // 想要发送的人的名字
-      name: '打工人',
-      // 使用微信测试号：扫码关注你的微信测试号后生成的一段字符串，在测试号后台能看到
-      id: 'o_tmx6ZwvIe0sbBaLVgvyV5Q9FD4',
-      // 使用微信测试号：你想对他发送的模板消息的模板ID
-      useTemplateId: 'u9qu5d2BP-Y_ddLgIu_NVypCVXwqhiFH7oyi_7j33BE',
-      // 新历生日, 仅用作获取星座运势, 格式必须为MM-DD
-      horoscopeDate: '12-27',
-      festivals: [
-        // 注意：此条配置日期为阴历日期，因为`type`中 “生日” 之前有 * 符号
+"APP_ID": "wxde3fc3dd6d16688c",
+    "APP_SECRET": "849a0458f4f7cfa3aac0bf1188583808",
+    "IS_SHOW_COLOR": true,
+    "CALLBACK_TEMPLATE_ID": "",
+    "CALLBACK_USERS": [
         {
-          type: '*生日', name: '宝贝', year: '1996', date: '09-09',
-        },
-        // 注意：此条配置日期为阳历日期，因为`type`中 “生日” 之前没有 * 符号
+            "name": "自己",
+            "id": "o_tmx6ZwvIe0sbBaLVgvyV5Q9FD4"
+        }
+    ],
+    "USERS": [
         {
-          type: '生日', name: '李四', year: '1996', date: '09-31',
-        },
-        {
-          type: '节日', name: '相识纪念日', year: '2020', date: '12-20',
-        },
-      ],
-      // 我们在一起已经有xxxx天了的配置
-      customizedDateList: [
-        // 在一起的日子
-        { keyword: 'love_day', date: '2022-09-08' },
-        // 结婚纪念日
-        { keyword: 'marry_day', date: '2022-09-09' },
-      ],
+            "name": "Henry",
+            "id": "o_tmx6ZwvIe0sbBaLVgvyV5Q9FD4",
+            "useTemplateId": "xtgyvPwgN-AXYHcYT2o8rCUeWxf_3NTZH0I3cP9YaMY",
+            "province": "广西",
+            "city": "南宁",
+            "horoscopeDate": "09-14",
+            "horoscopeDateType": "今日",
+            "openUrl": "https://shuangxunian.github.io/",
+            "festivals": [
+                {
+                    "type": "生日",
+                    "name": "bir",
+                    "date": "09-14",
+                    "year": "1999"
+                }
+            ],
+            "customizedDateList": []
+        }
+    ],
+    "SWITCH": {
+        "weather": true,
+        "holidaytts": true,
+        "CIBA": true,
+        "oneTalk": true,
+        "earthyLoveWords": false,
+        "momentCopyrighting": false,
+        "poisonChickenSoup": false,
+        "poetry": true,
+        "horoscope": false,
+        "birthdayMessage": true
     },
-  ],
 
 
   // 【推送完成提醒】模板id, 用来看自己有没有发送成功的那个模板
