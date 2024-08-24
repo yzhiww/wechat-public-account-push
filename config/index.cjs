@@ -13,8 +13,8 @@ const USER_CONFIG = {
   // 使用微信测试号：公众号APP_SECRET
   APP_SECRET: '849a0458f4f7cfa3aac0bf1188583808',
 
-  PROVINCE: '广东',
-  CITY: '惠州',
+  PROVINCE: '广西',
+  CITY: '南宁',
 
   USERS: [
     {
@@ -36,7 +36,7 @@ const USER_CONFIG = {
           type: '生日', name: '李四', year: '1996', date: '09-31',
         },
         {
-          type: '节日', name: '相识纪念日', year: '2020', date: '09-03',
+          type: '节日', name: '相识纪念日', year: '2020', date: '12-20',
         },
       ],
       // 我们在一起已经有xxxx天了的配置
